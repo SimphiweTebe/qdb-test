@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+html{
+    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+//ANT
+@import '~antd/dist/antd.css';
+
+//COLORS
+$base: #404040;
+$baseLite: lighten($base, 40);
+
+body{
+    font-family: sans-serif;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    color: $base;
+    background-color: #82b1ff;
+}
+
+.container{
+    position: relative;
+    width: 90%;
+    max-width: 140rem;
+    margin: 4rem auto;
+    min-height: 80vh;
+}
+
+//SIDEBAR PROFILE
+.profile{
+    position: relative;
+    text-align: center;
+    padding: 5rem 0;
+    background: #fff;
+
+    &__photo{
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto 30px;
+        border-radius: 50%;
+    }
+
+    &__greeting{
+        font-size: 1.8rem;
+        color: $baseLite;
+        
+    }
+
+    &__username{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+//PAGES
+.page{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+}
